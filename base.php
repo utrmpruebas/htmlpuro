@@ -1,6 +1,8 @@
 <?php
 $con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-mysqli_real_connect($con, "utrm.mysql.database.azure.com", "administrador@utrm", "root12_12", "nombre y correo", 3306)
+mysqli_real_connect($con, "utrm.mysql.database.azure.com", "administrador@utrm", "root12_12", "nombreycorreo", 3306);
+
+
 
 if ($mysqli->connect_errno){
 	 echo "La base de datos presenta demorar, no me culpe a mi, culpe a Azure"
