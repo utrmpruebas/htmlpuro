@@ -1,7 +1,5 @@
 <?php
-$con=mysqli_init(); mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-mysqli_real_connect($con, "utrm.mysql.database.azure.com", "administrador@utrm", "root12_12", "nombreycorreo", 3306);
-
+$mysqli = new mysqli ("utrm.mysql.database.azure.com","administrador@utrm","root12_12","utrmnombres");
 
 
 if ($mysqli->connect_errno){
